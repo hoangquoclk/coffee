@@ -59,10 +59,72 @@ input:focus{
 }
 
 #search-hide {
-	height: 100px;
+	/*background-color: transparent !important;*/
+	position: absolute;
+	z-index: 1;
+	height: 110px;
 	width: 100%;
-	background-color: rgba(0,0,0,.8);
+	background-color: rgba(0,0,0,.7);
+	padding-top: 40px;
 	display: none;
+}
+
+#search-hide #search-text {
+	margin-left: 100px;
+	width: 70%;
+	background-color: transparent;
+	color: white;
+	border: none;
+	font-size: 25px;
+}
+
+#search-hide #close {
+	margin-right: 100px;
+	color: white;
+}
+
+#information {
+	position: fixed;
+	z-index: 999;
+	width: 400px;
+	height: 800px;
+	background-color: rgba(0,0,0);
+	right: 0;
+	text-align: center;
+	padding-top: 50px;
+	color: white;
+	display: none;
+	/*visibility: hidden;*/
+	animation: hien_tu_trai 0.5s;
+}
+
+#information div#info-close button#close-info {
+	color: white;
+	margin-right: 50px;
+	margin-bottom: 10px;
+}
+
+#information div#info-logo {
+	height: 100px;
+	margin-bottom: 50px;
+	float: right;
+}
+
+#information div#info-shop {
+	padding: 20px;
+}
+
+#information div#info-contact {
+}
+
+#information div#info-contact-else {
+	margin-top: 40px;
+}
+
+#information div#info-contact-else span a{
+	padding: 5px;
+	font-size: 20px;
+	color: white;
 }
 
 #slides{
@@ -176,6 +238,15 @@ input:focus{
 		height: 500px;
 	}
 
+	#search-hide #search-text {
+		width: 60%;
+		margin-left: 20px;
+		font-size: 20px;
+	}
+
+	#search-hide #close {
+		margin-right: 20px;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -193,11 +264,21 @@ input:focus{
 @keyframes dilen {
 	from {
 		position: absolute;
-		top: 20%
+		top: 20%;
 	}
 
 	to {
 		position: absolute;
 		top: 15%;
+	}
+}
+
+@keyframes hien_tu_trai {
+	from {
+		transform: translate(100%);
+	}
+
+	to {
+		transform: translate(0%);
 	}
 }

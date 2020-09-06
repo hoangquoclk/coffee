@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
   <title>CORRETTO COFFEE</title>
   <link rel="icon" href="img/coffee-icon.jpg">
@@ -7,7 +7,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" type="text/css" href="css/index.css">
-  <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="font-awesome/css/all.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
@@ -21,7 +20,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
         <span class="navbar-toggler-icon"></span>
       </button>
-    	<a href="#" class="navbar-branch"><img src="img/logo.png" id="logo"></a>
+    	<a href="#" class="navbar-branch" title="CORRETTO COFFEE"><img src="img/logo.png" id="logo"></a>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -65,12 +64,40 @@
 
   <!-- navbar search -->
   <div id="search-hide">
-    <div class="form-group">
-      <!-- <input type="text" class="form-control" placeholder="SEARCH" id="form-search">
-      <label>x</label> -->
+    <div>
+      <input type="text" name="search-text" id="search-text" placeholder="SEARCH">
+      <button type="button" class="close" data-dismiss="search-text" id="close">&times;</button>
     </div>
   </div>
   <!-- end navbar search -->
+
+  <!-- information coffee shop -->
+  <div id="information">
+    <div>
+      <div id="info-close">
+        <button type="button" class="close" data-dismiss="search-text" id="close-info">&times;</button>
+      </div>
+      <div id="info-logo">
+        <a href="#">
+          <img src="img/logo.png">
+        </a>
+      </div>
+      <div id="info-shop">
+        <p>Lorem ipsum dolor sit amet, consecteturadip iscing elit, sed do eiusmod tempor incididunt ut labore et dolore sit.</p>
+      </div>
+      <div id="info-contact">
+        <p>example@gmail.com</p>
+        <p>+84-123-314-122</p>
+      </div>
+      <div id="info-contact-else">
+        <span><a href="#"><i class="fab fa-instagram-square"></i></a></span>
+        <span><a href="#"><i class="fab fa-facebook-square"></i></a></span>
+        <span><a href="#"><i class="fab fa-twitter-square"></i></a></span>
+        <span><a href="#"><i class="fab fa-youtube-square"></i></a></span>
+      </div>
+    </div>
+  </div>
+  <!-- end inf -->
 
   <!-- carousel -->
   <div id="slides" class="carousel slide" data-ride="carousel">
