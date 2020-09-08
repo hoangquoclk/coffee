@@ -94,7 +94,8 @@ input:focus{
 	padding-top: 50px;
 	color: white;
 	display: none;
-	/*visibility: hidden;*/
+	/*opacity: 0;
+	visibility: hidden;*/
 	animation: hien_tu_trai 0.5s;
 }
 
@@ -133,6 +134,7 @@ input:focus{
 
 #slides .carousel-inner .carousel-item img.img-slide {
 	height: 800px;
+	/*width: 100%;*/
 }
 
 #slides .carousel-inner .carousel-item .carousel-caption {
@@ -145,6 +147,7 @@ input:focus{
 #slides .carousel-inner .carousel-item .carousel-caption h1 {
 	text-shadow: 2px 2px 10px black;
 	font-size: 450%;
+	font-family: 'Kufam', cursive;
 }
 
 #slides .carousel-inner .carousel-item .carousel-caption .gach {
@@ -163,9 +166,118 @@ input:focus{
 }
 
 #slides .carousel-inner .carousel-item .carousel-caption button:hover{
-	background-color: #743a00;
+	background-color: #be9c79;
 	color: white;
-	border: 1px solid #743a00;
+	border: 1px solid #be9c79;
+}
+
+#delicious-offer .container .delicious-info {
+	padding-top: 100px;
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#delicious-offer .container .delicious-info h2{
+	font-size: 250%;
+	font-family: 'Kufam', cursive;
+	text-shadow: 2px 2px 10px gray;
+}
+
+#delicious-offer .container .delicious-info img {
+	color: #be9c79;
+	margin: 0px auto;
+	display: block;
+}
+
+#delicious-offer .container .delicious-info p {
+	margin-top: 30px;
+	color: #332c13;
+	font-size: 120%;
+}
+
+#delicious-offer .container .delicious-classify {
+	margin-top: 50px;
+	margin-bottom: 100px;
+}
+
+#delicious-offer .container .delicious-classify .type-of-classify {
+	text-align: center;
+	padding: 0px 10px 0px 10px;
+}
+
+#delicious-offer .container .delicious-classify .type-of-classify img {
+	display: block;
+	margin: 0px auto;
+}
+
+#delicious-offer .container .delicious-classify .type-of-classify h4 {
+	margin-top: 20px;
+	font-weight: 400;
+}
+
+#delicious-offer .container .delicious-classify .type-of-classify h4 a{
+	text-decoration: none;
+	color: black;
+}
+
+#the-coffee-herald .container .delicious-info {
+	padding-top: 100px;
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#the-coffee-herald {
+	background-image: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/new-new-h1-bacground-img-3.jpg);
+}
+
+#the-coffee-herald .container .delicious-info h2{
+	font-size: 250%;
+	font-family: 'Kufam', cursive;
+	text-shadow: 2px 2px 10px gray;
+}
+
+#the-coffee-herald .container .delicious-info img {
+	color: #be9c79;
+	margin: 0px auto;
+	display: block;
+}
+
+#the-coffee-herald .container .delicious-info p {
+	margin-top: 30px;
+	color: #332c13;
+	font-size: 120%;
+}
+
+#the-coffee-herald .container .herald .type-of-classify{
+	margin-top: 50px;
+}
+
+#the-coffee-herald .container .herald .type-of-classify img{
+	width: 100%;
+}
+
+#the-coffee-herald .container .herald .type-of-classify h4{
+	margin-top: 20px;
+	font-size: 150%;
+}
+
+#the-coffee-herald .container .herald .type-of-classify h5 {
+	font-size: 100%;
+}
+
+#the-coffee-herald .container .herald .type-of-classify p {
+	color: #656565;
+}
+
+#the-coffee-herald .container .herald .type-of-classify a{
+	text-decoration: none;
+	color: #656565;
+}
+
+#the-coffee-herald .container .herald .type-of-classify a:hover{
+	color: #be9c79;
 }
 
 @media only screen and (max-width: 992px) {
@@ -187,6 +299,24 @@ input:focus{
 
 	.navbar .container-fluid span.navbar-text {
 		display: none;
+	}
+
+	#delicious-offer .container .delicious-info {
+		padding-top: 100px;
+		width: 80%;
+	}
+
+	#delicious-offer .container .delicious-info h2{
+		font-size: 250%;
+	}
+
+	#the-coffee-herald .container .delicious-info {
+		padding-top: 100px;
+		width: 80%;
+	}
+
+	#the-coffee-herald .container .delicious-info h2{
+		font-size: 250%;
 	}
 }
 
@@ -247,6 +377,24 @@ input:focus{
 	#search-hide #close {
 		margin-right: 20px;
 	}
+
+	#delicious-offer .container .delicious-info {
+		padding-top: 100px;
+		width: 100%;
+	}
+
+	#delicious-offer .container .delicious-info h2{
+		font-size: 180%;
+	}
+
+	#the-coffee-herald .container .delicious-info {
+		padding-top: 100px;
+		width: 100%;
+	}
+
+	#the-coffee-herald .container .delicious-info h2{
+		font-size: 180%;
+	}
 }
 
 @media only screen and (max-width: 576px) {
@@ -258,7 +406,23 @@ input:focus{
 		font-size: 200%;
 	}
 
+	#delicious-offer .container .delicious-info {
+		padding-top: 50px;
+		width: 100%;
+	}
+
+	#delicious-offer .container .delicious-info h2{
+		font-size: 120%;
+	}
 	
+	#the-coffee-herald .container .delicious-info {
+		padding-top: 50px;
+		width: 100%;
+	}
+
+	#the-coffee-herald .container .delicious-info h2{
+		font-size: 120%;
+	}
 }
 
 @keyframes dilen {

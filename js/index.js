@@ -14,12 +14,14 @@ $(document).ready(function(){
 	$('.fa-list').click(function(){
 		$('#information').css('display','block');
 		// $('#information').css('visibility','visible');
+		// $('#information').css('opacity','1');
 	});
 
 	$('#close-info').click(function(){
     	// $("#information").animate({right: '-400px'}, "slow");
     	// $('#information').css('visibility','hidden');
-    	// HideTheElementAfterAnimation();
+  //   	$('#information').css('visibility','hidden');
+		// $('#information').css('opacity','0');
     	$('#information').css('display','none');
 	});
 });
