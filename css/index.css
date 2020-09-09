@@ -218,7 +218,11 @@ input:focus{
 
 #delicious-offer .container .delicious-classify .type-of-classify h4 a{
 	text-decoration: none;
-	color: black;
+	color: #656565;
+}
+
+#delicious-offer .container .delicious-classify .type-of-classify h4 a:hover{
+	color: #be9c79;
 }
 
 #the-coffee-herald .container .delicious-info {
@@ -252,6 +256,7 @@ input:focus{
 
 #the-coffee-herald .container .herald .type-of-classify{
 	margin-top: 50px;
+	margin-bottom: 50px;
 }
 
 #the-coffee-herald .container .herald .type-of-classify img{
@@ -260,15 +265,20 @@ input:focus{
 
 #the-coffee-herald .container .herald .type-of-classify h4{
 	margin-top: 20px;
-	font-size: 150%;
+	font-size: 130%;
 }
 
 #the-coffee-herald .container .herald .type-of-classify h5 {
 	font-size: 100%;
+	transition: 2s;
 }
 
 #the-coffee-herald .container .herald .type-of-classify p {
 	color: #656565;
+}
+
+#the-coffee-herald .container .herald .type-of-classify h5:hover{
+	transform: translate(10px,0px);
 }
 
 #the-coffee-herald .container .herald .type-of-classify a{
@@ -278,6 +288,301 @@ input:focus{
 
 #the-coffee-herald .container .herald .type-of-classify a:hover{
 	color: #be9c79;
+}
+
+#img-scroll {
+	background: url('../img/slide1.jpg') no-repeat center;
+	background-size: cover;
+	background-attachment: fixed;
+	height: 80vh;
+	/*position: relative;*/
+}
+
+#img-scroll img {
+	display: block;
+	margin: auto;
+	padding-top: 120px;
+	/*position: absolute;
+	left: 40%;*/
+	top: 30%;
+}
+
+#rating {
+	margin-top: 100px;
+	margin-bottom: 100px;
+}
+
+#rating .container {
+	margin: 0px auto;
+}
+
+#rating .container .type-of-rating {
+	text-align: center;
+}
+
+#rating .container .type-of-rating .number-rating{
+	font-size: 500%;
+	font-family: 'Kufam', cursive;
+	color: #c2aa90;
+}
+
+#rating .container .type-of-rating h4{
+	font-weight: 400;
+}
+
+#online-coffee-shop {
+	background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/h1-bacground-img-1.jpg);
+}
+
+#online-coffee-shop .container .delicious-info {
+	padding-top: 100px;
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#online-coffee-shop .container .delicious-info h2{
+	font-size: 250%;
+	font-family: 'Kufam', cursive;
+	text-shadow: 2px 2px 10px gray;
+}
+
+#online-coffee-shop .container .delicious-info img {
+	color: #be9c79;
+	margin: 0px auto;
+	display: block;
+}
+
+#online-coffee-shop .container .delicious-info p {
+	margin-top: 30px;
+	color: #332c13;
+	font-size: 120%;
+}
+
+#online-coffee-shop .container .product .info-product {
+	text-align: center;
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#online-coffee-shop .container .product .info-product .img-product {
+	position: relative;
+	text-align: center;
+}
+
+#online-coffee-shop .container .product .info-product .img-product img{
+	width: 90%;
+	margin: 0px auto;
+	display: block;
+}
+
+#online-coffee-shop .container .product .info-product .img-product img:hover{
+	opacity: .5;
+}
+
+#online-coffee-shop .container .product .info-product h4 {
+	font-weight: 400;
+}
+
+#online-coffee-shop .container .product .info-product h4 a{
+	text-decoration: none;
+	color: #656565;
+}
+
+#online-coffee-shop .container .product .info-product h4 a:hover{
+	color: #be9c79;
+}
+
+#online-coffee-shop .container .product .info-product p {
+	color: #7b5e1b;
+	font-size: 120%;
+}
+
+#online-coffee-shop .container .product .info-product .img-product .add-to-cart {
+	height: 50px;
+	width: 100%;
+	line-height: 50px;
+	background-color: #be9c79;
+	color: white;
+	position: absolute;
+	top: 40%;
+	cursor: pointer;
+	visibility: hidden;
+	opacity: 0;
+}
+
+#online-coffee-shop .container .product .info-product .img-product:hover .add-to-cart{
+	transition: 1s;
+	visibility: visible;
+	opacity: 1;
+} 
+
+#online-coffee-shop .container .product .info-product .img-product .add-to-cart:hover {
+	background-color: black;
+}
+
+#our-sweet-gallery {
+	margin-bottom: 100px;
+}
+
+#our-sweet-gallery .container .delicious-info {
+	padding-top: 100px;
+	width: 50%;
+	margin: 0px auto;
+	text-align: center;
+}
+
+#our-sweet-gallery .container .delicious-info h2{
+	font-size: 250%;
+	font-family: 'Kufam', cursive;
+	text-shadow: 2px 2px 10px gray;
+}
+
+#our-sweet-gallery .container .delicious-info img {
+	color: #be9c79;
+	margin: 0px auto;
+	display: block;
+}
+
+#our-sweet-gallery .container .delicious-info p {
+	margin-top: 30px;
+	color: #332c13;
+	font-size: 120%;
+}
+
+#blog {
+	margin: 0px auto;
+	margin-bottom: 50px;
+	padding: 0px;
+}
+
+#blog .each-blog .img-blog{
+	position: relative;
+	margin-bottom: 20px;
+}
+
+#blog .each-blog .img-blog img{
+	width: 100%;
+}
+
+#blog .each-blog .img-blog:hover .hide-each-blog {
+	transition: .5s;
+	opacity: .7;
+	visibility: visible;
+}
+
+#blog .each-blog .img-blog .hide-each-blog {
+	width: 100%;
+	height: 100%;
+	background-color: black;
+	position: absolute;
+	top: 0;
+	text-align: center;
+	color: white;
+	opacity: 0;
+	visibility: hidden;
+}
+
+#blog .each-blog .img-blog .hide-each-blog h4 {
+	font-family: 'Kufam', cursive;
+	margin-top: 25%;
+}
+
+#blog .each-blog .img-blog .hide-each-blog h4 a{
+	text-decoration: none;
+	color: white;
+}
+
+#blog .each-blog .img-blog .hide-each-blog p a{
+	text-decoration: none;
+	color: white;
+}
+
+#blog .each-blog .img-blog .hide-each-blog p a:hover{
+	transition: 1s;
+	color: #be9c79;
+	font-size: 120%;
+}
+
+#contact-us {
+	background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/p2-background-img-1.jpg);
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+#contact-us .container span.word-contact {
+	padding-right: 50px;
+	font-size: 150%;
+}
+
+#contact-us .container span button {
+	height: 40px;
+	width: 150px;
+	border: none;
+	background-color: #be9c79;
+}
+
+#contact-us .container span button:hover {
+	transition: 1s;
+	background-color: black;
+}
+
+#contact-us .container span button a{
+	text-decoration: none;
+	color: white
+}
+
+#corretto {
+	background: url(https://corretto.qodeinteractive.com/wp-content/uploads/2018/04/footer-top-img-1.jpg);
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+
+#corretto .container {
+	width: 50%;
+	text-align: center;
+	color: white;
+}
+
+#corretto .container img{
+	margin: 0px auto;
+	display: block;
+	height: 80px;
+	margin-bottom: 50px;
+}
+
+#corretto .container h4 {
+	margin-top: 50px;
+}
+
+#corretto .container div a{
+	text-decoration: none;
+	color: white;
+}
+
+#corretto .container div a:hover {
+	transition: .5s;
+	color: #be9c79;
+}
+
+#corretto .container .input-group input{
+	height: 50px;
+	background-color: transparent;
+	color: white;
+	font-size: 120%;
+}
+
+#corretto .container .input-group .input-group-append {
+	background-color: white;
+}
+
+#corretto .container .input-group .input-group-append button i {
+	font-size: 120%;
+}
+
+#corretto .container .input-group .input-group-append:hover {
+	transition: .5s;
+	background-color: #be9c79;
 }
 
 @media only screen and (max-width: 992px) {
@@ -301,23 +606,17 @@ input:focus{
 		display: none;
 	}
 
-	#delicious-offer .container .delicious-info {
+	#delicious-offer .container .delicious-info, #the-coffee-herald .container .delicious-info
+	, #online-coffee-shop .container .delicious-info, #our-sweet-gallery .container .delicious-info {
 		padding-top: 100px;
 		width: 80%;
 	}
 
-	#delicious-offer .container .delicious-info h2{
+	#delicious-offer .container .delicious-info h2, #the-coffee-herald .container .delicious-info h2
+	, #online-coffee-shop .container .delicious-info h2, #our-sweet-gallery .container .delicious-info h2{
 		font-size: 250%;
 	}
 
-	#the-coffee-herald .container .delicious-info {
-		padding-top: 100px;
-		width: 80%;
-	}
-
-	#the-coffee-herald .container .delicious-info h2{
-		font-size: 250%;
-	}
 }
 
 @media only screen and (max-width: 768px) {
@@ -378,21 +677,14 @@ input:focus{
 		margin-right: 20px;
 	}
 
-	#delicious-offer .container .delicious-info {
+	#delicious-offer .container .delicious-info, #the-coffee-herald .container .delicious-info
+	, #online-coffee-shop .container .delicious-info, #our-sweet-gallery .container .delicious-info {
 		padding-top: 100px;
 		width: 100%;
 	}
 
-	#delicious-offer .container .delicious-info h2{
-		font-size: 180%;
-	}
-
-	#the-coffee-herald .container .delicious-info {
-		padding-top: 100px;
-		width: 100%;
-	}
-
-	#the-coffee-herald .container .delicious-info h2{
+	#delicious-offer .container .delicious-info h2, #the-coffee-herald .container .delicious-info h2
+	, #online-coffee-shop .container .delicious-info h2, #our-sweet-gallery .container .delicious-info h2{
 		font-size: 180%;
 	}
 }
@@ -406,21 +698,14 @@ input:focus{
 		font-size: 200%;
 	}
 
-	#delicious-offer .container .delicious-info {
+	#delicious-offer .container .delicious-info, #the-coffee-herald .container .delicious-info
+	, #online-coffee-shop .container .delicious-info, #our-sweet-gallery .container .delicious-info {
 		padding-top: 50px;
 		width: 100%;
 	}
 
-	#delicious-offer .container .delicious-info h2{
-		font-size: 120%;
-	}
-	
-	#the-coffee-herald .container .delicious-info {
-		padding-top: 50px;
-		width: 100%;
-	}
-
-	#the-coffee-herald .container .delicious-info h2{
+	#delicious-offer .container .delicious-info h2, #the-coffee-herald .container .delicious-info h2
+	, #online-coffee-shop .container .delicious-info h2, #our-sweet-gallery .container .delicious-info h2{
 		font-size: 120%;
 	}
 }
