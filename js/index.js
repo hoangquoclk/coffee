@@ -24,4 +24,22 @@ $(document).ready(function(){
 		// $('#information').css('opacity','0');
     	$('#information').css('display','none');
 	});
+
+	$(window).scroll(function(){
+		if($(this).scrollTop() > 1000){
+			$('#croll-top').fadeIn();
+		}
+		else{
+			$('#croll-top').fadeOut();
+		}
+	});
+
+	$('#up').click(function(){
+		// window.scrollTo({
+		// 	top: 0,
+		// 	left: 0,
+		// 	behavior: "smooth"
+		// });
+		$("html, body").animate({scrollTop: 0}, 2000);
+	});
 });
